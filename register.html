@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>ثبت رایگان فروشگاه | پاساژگردی</title>
+  <meta name="description" content="ثبت رایگان فروشگاه و پاساژ در پاساژگردی" />
+  <meta name="theme-color" content="#007aff" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="glass.css" />
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="register.css" />
+</head>
+<body class="page-register">
+  <div class="sticky-top">
+    <header class="site-header glass-bar">
+      <div class="header-right">
+        <a href="index.html" class="back-chip" aria-label="بازگشت">←</a>
+      </div>
+      <div class="header-center">
+        <div class="logo-text">ثبت رایگان</div>
+      </div>
+      <div class="header-left"></div>
+    </header>
+  </div>
+
+  <main class="reg-wrap">
+    <p class="reg-lead">اطلاعات فروشگاه یا پاساژ را وارد کنید. پس از بررسی، در سایت منتشر می‌شود.</p>
+
+    <form id="reg-form" class="reg-form glass" novalidate>
+      <div class="reg-section">
+        <h2 class="reg-h">موقعیت</h2>
+        <div class="reg-row">
+          <label for="f-province">استان *</label>
+          <input id="f-province" name="province" required autocomplete="address-level1" placeholder="مثلاً تهران" />
+        </div>
+        <div class="reg-row">
+          <label for="f-city">شهر *</label>
+          <input id="f-city" name="city" required autocomplete="address-level2" placeholder="مثلاً تهران" />
+        </div>
+        <div class="reg-row">
+          <label for="f-mall">نام پاساژ *</label>
+          <input id="f-mall" name="mall" required placeholder="نام مرکز خرید / پاساژ" />
+        </div>
+        <div class="reg-row">
+          <label for="f-category">دسته‌بندی شغلی *</label>
+          <input id="f-category" name="category" required placeholder="موبایل و کامپیوتر، لوازم خانگی، ..." />
+        </div>
+        <div class="reg-row">
+          <label for="f-address">آدرس</label>
+          <input id="f-address" name="address" autocomplete="street-address" placeholder="خیابان، پلاک..." />
+        </div>
+      </div>
+
+      <div class="reg-section">
+        <h2 class="reg-h">فروشگاه</h2>
+        <div class="reg-row">
+          <label for="f-store">نام فروشگاه *</label>
+          <input id="f-store" name="storeName" required placeholder="فروشگاه ..." />
+        </div>
+        <div class="reg-grid">
+          <div class="reg-row">
+            <label for="f-floor">طبقه</label>
+            <input id="f-floor" name="floor" placeholder="۳" />
+          </div>
+          <div class="reg-row">
+            <label for="f-unit">واحد</label>
+            <input id="f-unit" name="unit" placeholder="۱۲" />
+          </div>
+        </div>
+        <div class="reg-grid">
+          <div class="reg-row">
+            <label for="f-phone">تلفن</label>
+            <input id="f-phone" name="phone" inputmode="tel" placeholder="۰۲۱..." />
+          </div>
+          <div class="reg-row">
+            <label for="f-fax">فکس</label>
+            <input id="f-fax" name="fax" inputmode="tel" placeholder="۰۲۱..." />
+          </div>
+        </div>
+        <div class="reg-row">
+          <label for="f-website">آدرس سایت</label>
+          <input id="f-website" name="website" inputmode="url" placeholder="https://" dir="ltr" />
+        </div>
+      </div>
+
+      <div class="reg-section">
+        <h2 class="reg-h">ارتباط و برند</h2>
+        <div class="reg-row">
+          <label for="f-wa">واتساپ (با کد کشور)</label>
+          <input id="f-wa" name="whatsapp" inputmode="tel" placeholder="98912..." dir="ltr" />
+        </div>
+        <div class="reg-row">
+          <label for="f-tg">تلگرام</label>
+          <input id="f-tg" name="telegram" placeholder="username" dir="ltr" />
+        </div>
+        <div class="reg-row">
+          <label for="f-ig">اینستاگرام</label>
+          <input id="f-ig" name="instagram" placeholder="username" dir="ltr" />
+        </div>
+        <div class="reg-row">
+          <label for="f-shopcats">دسته‌بندی داخل فروشگاه</label>
+          <input id="f-shopcats" name="shopCategories" placeholder="موبایل، لوازم جانبی (با ویرگول)" />
+        </div>
+        <div class="reg-row">
+          <label for="f-brands">برندها</label>
+          <input id="f-brands" name="brands" placeholder="سامسونگ، اپل (با ویرگول)" />
+        </div>
+      </div>
+
+      <button type="submit" class="reg-submit" id="reg-submit">ثبت درخواست</button>
+    </form>
+
+    <div id="reg-thanks" class="reg-thanks glass" hidden>
+      <div class="reg-thanks-icon" aria-hidden="true">✓</div>
+      <h2>از همراهی شما سپاسگزاریم</h2>
+      <p>اطلاعاتتان دریافت شد و به‌زودی پس از بررسی در سایت بارگذاری می‌شود.</p>
+      <a href="index.html" class="reg-submit reg-link">بازگشت به صفحه اصلی</a>
+    </div>
+  </main>
+
+  <script src="register.js"></script>
+</body>
+</html>

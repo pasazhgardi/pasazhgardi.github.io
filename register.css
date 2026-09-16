@@ -1,0 +1,126 @@
+/* ثبت رایگان — فرم به سبک Apple HIG */
+.page-register {
+  background: var(--bg, #f2f2f7);
+  min-height: 100dvh;
+}
+.back-chip {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  color: var(--text, #1c1c1e);
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+.reg-wrap {
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 16px 16px 40px;
+}
+.reg-lead {
+  font-size: 0.9rem;
+  color: var(--muted, #8e8e93);
+  line-height: 1.5;
+  margin-bottom: 16px;
+  text-align: center;
+}
+.reg-form {
+  padding: 8px 16px 20px;
+  border-radius: 16px;
+}
+.reg-section { padding: 12px 0 8px; }
+.reg-section + .reg-section {
+  border-top: 0.5px solid rgba(128,128,128,0.18);
+}
+.reg-h {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--muted, #8e8e93);
+  text-transform: none;
+  margin: 0 0 10px;
+  letter-spacing: 0;
+}
+.reg-row { margin-bottom: 12px; }
+.reg-row label {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--muted, #8e8e93);
+  margin-bottom: 5px;
+}
+.reg-row input {
+  width: 100%;
+  min-height: 44px; /* HIG touch target */
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 0.5px solid rgba(128,128,128,0.28);
+  background: rgba(255,255,255,0.65);
+  font-family: inherit;
+  font-size: 16px;
+  color: var(--text, #1c1c1e);
+  outline: none;
+}
+[data-theme="dark"] .reg-row input {
+  background: rgba(0,0,0,0.28);
+}
+.reg-row input:focus {
+  border-color: #007aff;
+  box-shadow: 0 0 0 3px rgba(0,122,255,0.2);
+}
+.reg-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.reg-submit {
+  display: block;
+  width: 100%;
+  min-height: 50px;
+  margin-top: 8px;
+  border: none;
+  border-radius: 12px;
+  background: #007aff;
+  color: #fff;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  line-height: 50px;
+}
+.reg-submit:active { opacity: 0.88; }
+.reg-link { margin-top: 16px; }
+
+.reg-thanks {
+  text-align: center;
+  padding: 32px 20px;
+  border-radius: 16px;
+}
+.reg-thanks-icon {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 14px;
+  border-radius: 50%;
+  background: rgba(52,199,89,0.15);
+  color: #34c759;
+  font-size: 1.6rem;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+}
+.reg-thanks h2 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+.reg-thanks p {
+  color: var(--muted, #8e8e93);
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+@media (max-width: 480px) {
+  .reg-wrap { padding: 12px 12px 32px; }
+  .reg-grid { grid-template-columns: 1fr; }
+}
